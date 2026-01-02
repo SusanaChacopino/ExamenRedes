@@ -1,7 +1,8 @@
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class JugadorControl : MonoBehaviour
+public class JugadorControl : NetworkBehaviour
 {
     public InputAction mover;
     public InputAction saltar;
@@ -19,21 +20,39 @@ public class JugadorControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        saltar.Enable();
-        mover.Enable();
+        if (IsOwner)
+        {
+            saltar.Enable();
+            mover.Enable();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (saltar.triggered && puedoSaltar > 0)
+        if(!IsOwner) return;
+
+        float dir = mover.ReadValue<float>();
+
+        //booelana para que el cliente pueda mandarle al server si se esta pulsando la tecla de saltar
+        bool salto = saltar.triggered;
+
+        MoverServerRpc(dir, salto);
+    }
+
+    [ServerRpc]
+    void MoverServerRpc(float dir, bool salto)
+    {
+        if (salto && puedoSaltar > 0)
         {
             rb.AddForce(Vector3.up * fuerzaSalto, ForceMode2D.Impulse);
         }
 
-        float dir = mover.ReadValue<float>();
         rb.linearVelocity = new Vector2(dir * velocidad, rb.linearVelocityY);
+        Debug.Log("Pulsando");
+    
     }
+    
 
     void OnTriggerEnter2D(Collider2D collision)
     {

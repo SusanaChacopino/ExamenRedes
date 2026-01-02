@@ -11,11 +11,11 @@ public class PuertaControl : MonoBehaviour
 
     public void Abrir()
     {
-        anim.SetBool("PuertaAnimControlAbrir", true);
+        anim.SetBool("abierta", true);
     }
 
     public void Cerrar()
     {
-        anim.SetBool("PuertaAnimControlAbrir", false);
+        anim.SetBool("abierta", false);
     }
 }

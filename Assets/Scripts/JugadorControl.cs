@@ -12,7 +12,12 @@ public class JugadorControl : NetworkBehaviour
 
     public int puedoSaltar = 0;
 
-    public int llave = 0;
+    //public int llave = 0; //Reemplazado por la siguiente linea
+    public NetworkVariable<int> llave = new NetworkVariable<int>(
+    0,
+    NetworkVariableReadPermission.Everyone,
+    NetworkVariableWritePermission.Server
+    ); //Nuevo, De esta forma el otro jugador tambien sabrá si esto cambia o no
 
     Rigidbody2D rb;
 
@@ -33,7 +38,6 @@ public class JugadorControl : NetworkBehaviour
         if(!IsOwner) return;
 
         float dir = mover.ReadValue<float>();
-
         //booelana para que el cliente pueda mandarle al server si se esta pulsando la tecla de saltar
         bool salto = saltar.triggered;
 

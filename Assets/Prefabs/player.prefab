@@ -339,7 +339,8 @@ MonoBehaviour:
   velocidad: 5
   fuerzaSalto: 10
   puedoSaltar: 0
-  llave: 0
+  llave:
+    m_InternalValue: 0
 --- !u!114 &-7563511575838482663
 MonoBehaviour:
   m_ObjectHideFlags: 0

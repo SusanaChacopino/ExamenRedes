@@ -1,27 +1,38 @@
 using UnityEngine;
+using Unity.Netcode;
 
-public class MetaControl : MonoBehaviour
+public class MetaControl : NetworkBehaviour
 {
 
     public GameObject letreroGanar;
+    private NetworkVariable<bool> partidaGanada = new NetworkVariable<bool>(
+        false,
+        NetworkVariableReadPermission.Everyone,
+        NetworkVariableWritePermission.Server
+    ); //Nuevo 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
+        partidaGanada.OnValueChanged += OnPartidaGanada;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnPartidaGanada(bool oldValue, bool newValue)
     {
-        
+        if (newValue)
+        {
+            letreroGanar.SetActive(true);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (!IsServer) return; //Nuevo
+
+        if (collision.CompareTag("Player"))
         {
             //HAN GANADO
-            letreroGanar.SetActive(true);
+            //letreroGanar.SetActive(true); //Reemplazada por la funcion void OnPartidaGanada
+            partidaGanada.Value = true;
         }
     }
 }

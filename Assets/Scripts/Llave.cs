@@ -1,29 +1,22 @@
 using UnityEngine;
+using Unity.Netcode; //Nuevo
 
-public class Llave : MonoBehaviour
+public class Llave : NetworkBehaviour 
 {
     public int codigo = 0;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!IsServer) return; //Nuevo
+
         if (collision.CompareTag("Player"))
         {
             JugadorControl jc = collision.GetComponent<JugadorControl>();
-            if(jc.llave == 0)
+            if(jc.llave.Value == 0) //Nuevo ".Value"
             {
-                jc.llave = codigo;
-                Destroy(gameObject);
+                jc.llave.Value = codigo;
+                //Destroy(gameObject); //Reemplazada por la siguiente linea
+                GetComponent<NetworkObject>().Despawn(); //Nuevo: Esta es la forma de destruir el objeto en la red, osea, en todos los clientes.
             }
         }
     }

@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1370719810098545521, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3152625834
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370719810098545521, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5462780345602837436, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.42
@@ -1046,6 +1054,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6659670062162344371, guid: 66e03b0d9f49a8243899fc863f2a7702, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3988865532
+      objectReference: {fileID: 0}
+    - target: {fileID: -6659670062162344371, guid: 66e03b0d9f49a8243899fc863f2a7702, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6659670062162344371, guid: 66e03b0d9f49a8243899fc863f2a7702, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 2702314234
+      objectReference: {fileID: 0}
     - target: {fileID: 4341219384244410829, guid: 66e03b0d9f49a8243899fc863f2a7702, type: 3}
       propertyPath: m_Name
       value: puertaLlavePadre (1)
@@ -1186,6 +1206,18 @@ PrefabInstance:
       propertyPath: puerta
       value: 
       objectReference: {fileID: 523275033}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1396053062
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1428964248
+      objectReference: {fileID: 0}
     - target: {fileID: 4174173595592878142, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
       propertyPath: m_Name
       value: botonPuerta (1)
@@ -1243,6 +1275,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1370719810098545521, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3629241554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370719810098545521, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5462780345602837436, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.54
@@ -2010,6 +2050,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 122626280043989015, guid: 1039debcce767b64b9bf355714eb2f8d, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 912650746
+      objectReference: {fileID: 0}
+    - target: {fileID: 122626280043989015, guid: 1039debcce767b64b9bf355714eb2f8d, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122626280043989015, guid: 1039debcce767b64b9bf355714eb2f8d, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3631898203
+      objectReference: {fileID: 0}
     - target: {fileID: 2333693165308729518, guid: 1039debcce767b64b9bf355714eb2f8d, type: 3}
       propertyPath: codigo
       value: 1
@@ -3372,6 +3424,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6659670062162344371, guid: 66e03b0d9f49a8243899fc863f2a7702, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3892166850
+      objectReference: {fileID: 0}
+    - target: {fileID: -6659670062162344371, guid: 66e03b0d9f49a8243899fc863f2a7702, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6659670062162344371, guid: 66e03b0d9f49a8243899fc863f2a7702, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 2702314234
+      objectReference: {fileID: 0}
     - target: {fileID: 4341219384244410829, guid: 66e03b0d9f49a8243899fc863f2a7702, type: 3}
       propertyPath: m_Name
       value: puertaLlavePadre
@@ -4279,6 +4343,18 @@ PrefabInstance:
       propertyPath: puerta
       value: 
       objectReference: {fileID: 505454199}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1035821201
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1428964248
+      objectReference: {fileID: 0}
     - target: {fileID: 4174173595592878142, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
       propertyPath: m_Name
       value: botonPuerta (2)
@@ -4727,6 +4803,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4661215205134683607, guid: db761987d90eed64d824c801057e0a5f, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1730955011
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661215205134683607, guid: db761987d90eed64d824c801057e0a5f, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1421822867
+      objectReference: {fileID: 0}
     - target: {fileID: 4991759486799448368, guid: db761987d90eed64d824c801057e0a5f, type: 3}
       propertyPath: letreroGanar
       value: 
@@ -4788,6 +4872,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1370719810098545521, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3994282703
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370719810098545521, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5462780345602837436, guid: 1fa076a442f71be4aadd717786a6d211, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4845,6 +4937,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 122626280043989015, guid: 1039debcce767b64b9bf355714eb2f8d, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3527592875
+      objectReference: {fileID: 0}
+    - target: {fileID: 122626280043989015, guid: 1039debcce767b64b9bf355714eb2f8d, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122626280043989015, guid: 1039debcce767b64b9bf355714eb2f8d, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3631898203
+      objectReference: {fileID: 0}
     - target: {fileID: 2333693165308729518, guid: 1039debcce767b64b9bf355714eb2f8d, type: 3}
       propertyPath: codigo
       value: 2
@@ -4910,6 +5014,18 @@ PrefabInstance:
       propertyPath: puerta
       value: 
       objectReference: {fileID: 534307827}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3091189555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522116795520038879, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1428964248
+      objectReference: {fileID: 0}
     - target: {fileID: 4174173595592878142, guid: f77c9d06e8dd50c489ccfabb3dd0eef0, type: 3}
       propertyPath: m_Name
       value: botonPuerta
